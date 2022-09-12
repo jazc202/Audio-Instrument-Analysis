@@ -1,0 +1,11 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+
+{% block title %}List of Instruments in {{title}}{% endblock %}
+{% block content %}    
+<ul>
+{% for i in instrument_list %}
+<li> {{i.capitalize()}} </li>
+{% endfor %}
+</ul>
+{% endblock %}

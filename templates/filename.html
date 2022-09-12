@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<form action="{{ url_for('fileanalysis')}}" method="POST">
+  <label for="title">File Title</label>
+  <input type="text" name="title" id="title">
+  <label for="time">Start at (in seconds)</label>
+  <input type = "number" name = 'time' id = 'time'>
+  <input type="submit">
+</form>
+<p></p>
+<div>
+  {% for i in files %}
+    <span>{{ i }}</span><br>
+  {% endfor %}
+</div>
+{% endblock %}
