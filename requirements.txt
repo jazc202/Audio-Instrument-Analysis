@@ -51,7 +51,7 @@ pandas==1.4.4
 Pillow==9.2.0
 platformdirs==2.5.2
 pooch==1.6.0
-protobuf==3.19.4
+protobuf==3.19.5
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.21
